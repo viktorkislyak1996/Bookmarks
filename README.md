@@ -1,0 +1,2 @@
+# Bookmarks
+Bookmarks django app
