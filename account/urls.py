@@ -6,6 +6,9 @@ from account.views import *
 
 urlpatterns = [
     # path('login/', user_login, name='login'),
+    # register
+    path('register/', user_register, name='register'),
+    # login/logout
     path('', dashboard, name='dashboard'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
