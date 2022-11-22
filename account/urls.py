@@ -12,6 +12,8 @@ urlpatterns = [
     path('', dashboard, name='dashboard'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
+    # edit info
+    path('edit/', user_edit, name='edit'),
     # password change
     path('password_change/', PasswordChangeView.as_view(), name='password_change'),
     path('password_change/done/', PasswordChangeDoneView.as_view(), name='password_change_done'),
